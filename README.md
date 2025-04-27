@@ -1,4 +1,4 @@
-# # Página Interativa - Bom Dia
+# Página Interativa - Bom Dia
 
 Este projeto é uma forma divertida de treinar fundamentos de JavaScript e CSS. A ideia é criar uma página interativa para brincar com uma amiga, com elementos como música, imagens e um botão que gera uma mensagem de "Bom Dia" aleatória.
 
