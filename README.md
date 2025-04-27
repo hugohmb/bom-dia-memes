@@ -18,3 +18,5 @@ O objetivo principal deste projeto não é apenas a diversão, mas também aprim
 - **HTML**: Estrutura da página.
 - **CSS**: Estilo e layout da página, com animações e efeitos de transição.
 - **JavaScript**: Manipulação de eventos e controle dinâmico do conteúdo da página.
+
+- Obs: Não tenho a intenção de otimizar para desktop, pois o objetivo é rodar no navegador mobile.
