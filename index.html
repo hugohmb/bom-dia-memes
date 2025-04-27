@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>BOM DIA!!!</title>
+
+</head>
+
+<body>
+
+    <video id="backgroundVideo" autoplay loop muted>
+        <source src="video/bom-dia-video.mp4" type="video/mp4">        
+      </video>
+
+    <!-- Popup -->
+    <div id="popup">
+        <div id="popupContent">
+            <p>Bom dia, Lanna! Qual é a mensagem de hoje?</p>
+            <button id="startButton">Vamos!</button>
+        </div>
+    </div>
+
+
+
+    <!-- Conteúdo principal - começa escondido -->
+    <div id="mainContent" style="display: none;">
+        <audio id="backgroundMusic" src="audio/trilha sonora.mp3" controls loop></audio>
+
+        <button id="randomButton">Qual é o meu Bom Dia de hoje?</button>
+
+        <div id="content"></div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

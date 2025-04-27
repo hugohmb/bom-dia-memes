@@ -1,0 +1,137 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  position: relative; /* Para garantir que o conteúdo fique acima do vídeo */
+}
+
+#backgroundVideo {
+  position: absolute;  /* Coloca o vídeo no fundo */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  /* Ajusta o vídeo para cobrir toda a tela sem distorcer */
+  z-index: -1;  /* Garante que o vídeo fique atrás do conteúdo */
+  opacity: 0.5;  /* Define a opacidade para 50% */
+}
+
+#mainContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  flex-grow: 1;
+  padding-bottom: 80px;
+}
+
+#content {
+  max-width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  background-color: #f5d184;
+  color: rgb(165, 50, 88); 
+}
+
+img {
+  width: 100%; /* Garante que a largura da imagem ocupe 100% da tela */
+  height: auto; /* Mantém a proporção da imagem */
+  object-fit: cover; /* Garante que a imagem cubra a tela sem distorção */
+  border-radius: 10px;
+  margin-bottom: 20px; /* Espaço abaixo da imagem */
+  margin-top: 90px; /* Espaço acima da imagem para afastar do topo */
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    background-color: #e956e1;
+  }
+  50% {
+    transform: scale(1.1);  /* Aumenta o tamanho do botão */
+    background-color: #d74bb6;  /* Cor mais escura */
+  }
+  100% {
+    transform: scale(1);  /* Volta ao tamanho original */
+    background-color: #e956e1;  /* Cor original */
+  }
+}
+
+#randomButton {
+  position: fixed;
+  bottom: 150px;  /* Garante que o botão fique perto do fundo da tela */
+  left: 16%;  /* Centraliza horizontalmente */
+  transform: translateX(-50%);  /* Corrige o alinhamento do botão */
+  padding: 20px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #e956e1;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  animation: pulse 1.5s infinite;  /* Aplica a animação */
+}
+
+
+
+#backgroundMusic {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background: #000;
+  color: white;
+  padding: 10px;
+  border-top: 2px solid #f4a261;
+}
+
+
+
+#popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+#popupContent {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+#popupContent p {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+#popupContent button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
